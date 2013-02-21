@@ -11,7 +11,12 @@ print("This program displays an integer in reverse order.")
 while True:
 
     def reverse_int(n):
-        print(n[::-1])
+        a = 0
+        while n != 0:
+            a = a * 10 + n % 10
+            n = n / 10
+            n = int(n)
+        print(a)          
 
     while True:
         n = input("\nEnter an integer: ")
@@ -21,7 +26,8 @@ while True:
             print("\nPlease input an integer")
         else:
              break
-        
+
+    n = int(n)
     reverse_int(n)
 
     #gives the user an option to quit the application
