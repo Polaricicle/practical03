@@ -14,10 +14,6 @@ print("This program computes the sum of a series of fractions.")
 while True:
 
     def print_matrix(n):
-        elements = []
-        for i in range (1, n * n):
-            a = random.randint(0, 1)
-            elements.append(a)
         for h in range (0, n):
             for j in range (0, n):
                 b = random.randint(0, 1)
